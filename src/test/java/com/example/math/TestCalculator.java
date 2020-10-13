@@ -4,6 +4,12 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TestCalculator {
+   
+    @Test
+    public void multiply() {
+        Calculator calculator = new Calculator();
+        assertEquals(20, calculator.multiply(10, 2));
+    }
 
     @Test
     public void add() {
